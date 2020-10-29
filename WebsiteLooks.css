@@ -1,12 +1,12 @@
 body{
   font-family: helvetica;
-  background-image: linear-gradient(purple, darkblue);
   text-align: center;
   color: white;
   font-weight: bold;
   height: 500vh;
   background: #000;
 }
+
 html {
   height: 100vh;
 }
@@ -20,8 +20,17 @@ canvas {
   max-height: 100vh;
 }
 
+.bottomRightText{
+	position: sticky;
+	bottom: 800px;
+	right: 450px;
+	font-family: "Lucidia Console";
+	font-style: oblique;
+	text-align: center;
+}
+
 .button{
-  background-color: #4CAF50; /* Green */
+  background-color: #ebfcfc; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -29,4 +38,83 @@ canvas {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.bodyText{
+	font-family: "Lucidia Console", Monaco, monospace;
+	padding-bottom: 250px;
+	text-align: center;
+	position: sticky;
+}
+
+.curie-image{
+	width: 100%;
+	height: auto;
+	position: sticky;
+}
+
+a:link, a:visited {
+  background-image: linear-gradient(#bcd6d6, #00000f);
+  border-style: inset;
+  border-color: #ebfcfc;
+  border-width: 3px;
+  color: black;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: underline;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Lucidia Console";
+  font-style: oblique;
+  width: 100%;
+  height: auto;
+}
+
+a:hover{
+  background-image: linear-gradient(#ebfcfc, black);
+  color: white;
+  text-decoration: overline;
+  font-family: "Lucidia Console";
+  font-style: oblique;
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+    position: relative;
+    font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+	font-family: "Playfair Display";
+	letter-spacing: 5px;
+}
+h2:before, h2:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: #ebfcfc;
+}
+h2:before {
+    margin-left: -50%;
+    text-align: right;
+}
+
+p{
+	padding-bottom: 250px;
+}
+
+.chrisTeamImg{
+	width: 50%;
+	height: auto;
+	position: sticky;
+}
+
+.sidepanelTeamImg{
+	width: 50%;
+	height: 10%;
+	position: sticky;
 }

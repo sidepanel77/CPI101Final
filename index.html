@@ -1,17 +1,53 @@
 <html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
     <link rel="stylesheet" href="WebsiteLooks.css">
     <script>
-      function switchText(){
-        document.getElementById('bodyText').innerHTML = "Curie is a procedural a.i companion that learns from how you act";
-      }
+		function playSiteMusic(){
+			var x = document.getElementById("siteAudio").autoplay;
+		}
     </script>
   </head>
-  <body>
-    <h1>Curie - The AR Quarantine Buddy</h1>
-    <h2 id="bodyText">we are working on an all-in-one a.i. friend to keep you company during this
-    difficult time</h2>
-    <input type="button" id="tabSwitchButton" value="Switch" class="button"
-    onmouseover="switchText()">
+  <body onload="playSiteMusic()">
+  <!-- music for the site -->
+	<audio id="siteAudio" preload="auto" autoplay>
+		<source src="ES_Mays - Van Sandano.mp3">
+	</audio>
+
+	<!--topbar links-->
+	<div class="topbarlinks">
+		<a href="index.html" class="homeButton">CURIE</a>
+        <a href="theTeam.html" class="teamButton">The Team</a>
+        </div>
+      </div>
+    </div>
+	
+	<!--site header -->
+	<header class="headerContent" style="max-width:1600px;min-width:500px" id="home">
+	  <img class="curie-image" src="progression.png" alt="Curie Photo" width="1600" height="800">
+	  <div class="bottomRightText">
+		<h1>CURIE</h1>
+	  </div>
+	</header>
+	
+    <h2>The First AR Quarantine Buddy</h2>
+	<div id="bodyText">
+		<p>We are working on developing an all in one AR companion to increase the feeling of connection that this difficult time is so void of.
+		<br><br>Our AR companion, Curie, will be there to lift you up when these trying times are getting you down.
+		<br><br>Whether it be a phone, computer, or tablet, Curie will function on any device with a screen and a camera regardless of the OS you happen to be running.
+		<br><br>Feelings of loneliness and anxiety are almost universal this year, and we seek to help alleviate those. Curie may just be the answer.
+		<br><br>While not the same as a real human, Curie can be called on at every moment and will always have uplifting advice and comments to offer.
+		<br><br>Whether you're just lonely or in need of a source of positivity in your day-to-day, Curie is the companion for you.</p>
+	</div>
+    
+	
+	<h2>How Curie Works</h2>
+	<div>
+		<a class="logoImg" href="https://developers.google.com/ar">
+			<img class="siteApiImg" src="ARCoreLogo.png" alt="APILogo">
+		</a>
+		<p>
+		</p>
+	</div>
   </body>
 </html>
