@@ -115,6 +115,6 @@ p{
 
 .sidepanelTeamImg{
 	width: 50%;
-	height: 10%;
+	height: auto;
 	position: sticky;
 }
